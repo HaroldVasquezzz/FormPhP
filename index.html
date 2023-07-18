@@ -1,29 +1,42 @@
 <html>
-  <head>
-  </head>
-  <body>
-    <form name="empleados" class="formulario" action="informacion.php">
-      <tabla class="tabla" border="1">
+<head>
+  <title>Formulario de Productos</title>
+</head>
+<body>
+  <h2>Formulario de Productos</h2>
+  
+  <form name="producto"class="formulario" action="compra.php" method="POST">
+      <table class="tabla" border="1">
         <tr>
-          <td> Identificacion_Empleado</td>
-          <td> <input type="text" name="Identidicacion" class="Iden"></td>
+           <td>Producto</td>
+           <td>Precio</td>
         </tr>
+       
 <tr>
-  <td> Nombres y Apellidos</td>
-  <td> <input type="text" name="NomApellidos" class="Nombres" ></td>
+ <td>producto1</td>
+ <td> <input type="text" id="producto1" name="producto1"  class="producto1"> </td>
 </tr>
+        <br>
+       <tr>
+    <td>precio 1</td>
+   <td></td> <input type="number" id="precio1" name="precio1" class="precio1" ></td>
+        </tr>
+    <br><br>
         <tr>
-        <td>Cargo a desempeñar</td>
-        <td > <input type="text" name="Cargo" class="Cargo"></td>
-      </tr>
+    <td>producto2</td>
+ <td> <input type="text" id="producto2" name="producto2" class="producto2"></td>
+        </tr>
+    <br>
         <tr>
-        <td> Salario</td>
-        <td> <input type="text" name="Salario" class="Salario"></td>
-      </tr>
-      <tr>
-        <td > <input type="submit"  values="Enviar Datos" class="boton"></td>
-      </tr>
-      </tabla>
-    </form>
-  </body>
+    <td>precio 2</td>
+   <td> <input type="number" id="precio2" name="precio2" class="precio2"></td>
+        </tr>
+    <br>
+<tr>
+   <td> <input type="submit" value="Enviar"></td>
+  </tr>
+    </table>
+  </form>
+</body>
 </html>
+
